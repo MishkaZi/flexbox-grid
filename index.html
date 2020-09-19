@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <style>
+    div {
+      margin: 1px;
+      text-align: center;
+    }
+
+    div > div:nth-child(odd) {
+      background-color: lightblue;
+    }
+    div > div:nth-child(even) {
+      background-color: lightgreen;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container1 {
+      display: flex;
+      flex-direction: row;
+    }
+    .container2 {
+      display: flex;
+      flex-direction: column;
+    }
+    .container3 {
+      display: flex;
+      flex-direction: row;
+    }
+    .container5 {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+    
+    .block1 {
+      width: 30%;
+      height: 35px;
+    }
+    .block2 {
+      width: 70%;
+    }
+    .block3 {
+      width: 50%;
+      height: 100px;
+    }
+    .block4 {
+      width: 24.9%;
+      height: 35px;
+    }
+    .block5 {
+      width: 24.9%;
+      height: 35px;
+    }
+    .block6 {
+      width: 20%;
+      height: 135px;
+    }
+
+    .block7,
+    .block8,
+    .block9 {
+      width: 30%;
+      height: 45px;
+    }
+  </style>
+  <body>
+    <div class="container1">
+      <div class="block1">Block 1</div>
+      <div class="block2">Block 2</div>
+    </div>
+    <div class="container6"></div>
+    <div class="container2">
+      <div class="block3">Block 3</div>
+    </div>
+    <div class="container3">
+      <div class="block4">Block 4</div>
+      <div class="block5">Block 5</div>
+    </div>
+    <div class="container4">
+      <div class="block6">Block 6</div>
+    </div>
+    <div class="container5">
+      <div class="block7">Block 7</div>
+      <div class="block8">Block 8</div>
+      <div class="block9">Block 9</div>
+    </div>
+  </body>
+</html>
